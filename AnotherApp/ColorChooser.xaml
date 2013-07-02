@@ -1,0 +1,49 @@
+﻿<Window x:Class="AnotherApp.ColorChooser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:AnotherApp"
+        Title="ColorChooser" Height="300" Width="300">
+    <Grid>
+        <Slider Height="23" HorizontalAlignment="Left" 
+                Margin="12,12,0,0" Name="slider0" 
+                VerticalAlignment="Top" Width="254" 
+                Minimum="0" Maximum="100" 
+                SmallChange="1" LargeChange="10" />
+        <Slider Height="23" HorizontalAlignment="Left" 
+                LargeChange="10" Margin="12,41,0,0" 
+                Maximum="100" Minimum="0" 
+                Name="slider2" SmallChange="1" 
+                VerticalAlignment="Top" Width="254"
+                Background="Red"/>
+        <Slider Height="23" HorizontalAlignment="Left" 
+                LargeChange="10" Margin="12,70,0,0" 
+                Maximum="100" Minimum="0" 
+                Name="slider3" SmallChange="1" 
+                VerticalAlignment="Top" Width="254"
+                Background="Green"/>
+        <Slider Height="23" HorizontalAlignment="Left" 
+                LargeChange="10" Margin="12,99,0,0" 
+                Maximum="100" Minimum="0" 
+                Name="slider4" SmallChange="1" 
+                VerticalAlignment="Top" Width="254"
+                Background="Blue"/>
+        <Border BorderBrush="Silver" BorderThickness="1" 
+                Height="121" HorizontalAlignment="Left" 
+                Margin="12,128,0,0" Name="border1" 
+                VerticalAlignment="Top" Width="254">
+            <Border.Background>
+                <MultiBinding>
+                    <MultiBinding.Converter>
+                        <local:SliderValueToColorConverter>
+                            
+                        </local:SliderValueToColorConverter>
+                    </MultiBinding.Converter>
+                    <Binding ElementName="slider0" Path="Value"></Binding>
+                    <Binding ElementName="slider2" Path="Value"></Binding>
+                    <Binding ElementName="slider3" Path="Value"></Binding>
+                    <Binding ElementName="slider4" Path="Value"></Binding>
+                </MultiBinding>
+            </Border.Background>
+        </Border>
+    </Grid>
+</Window>

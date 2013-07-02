@@ -1,0 +1,21 @@
+﻿<Window x:Class="COntrol2ObjectBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:bindingToObjectsSimple ="clr-namespace:COntrol2ObjectBinding"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel Name="LayoutRoot" Height="350">
+        <StackPanel.Resources>
+            <bindingToObjectsSimple:Employee Firstname="Rahul" Lastname="Gathoo" x:Key="emp"></bindingToObjectsSimple:Employee>
+        </StackPanel.Resources>
+        <StackPanel Name="StackDataEntry">
+            <StackPanel.DataContext>
+                <StaticResource ResourceKey="emp"></StaticResource>
+            </StackPanel.DataContext>
+            <TextBox Name="TxtFistName" Text="{Binding Path=Firstname}"></TextBox>
+            <TextBox Name="TxtLstName" Text="{Binding Path=Lastname}"></TextBox>
+        </StackPanel>
+        <Button Content="Bind Data" Name="BtnBindData" Click="BtnBindData_Click"></Button>
+        <Button Content="Print Obj State" Name="BtnPrintObjState" Click="BtnPrintObjState_Click"></Button>
+        <Button Content="Change Obj State" Name="BtnChangeObjState" Click="BtnChangeObjState_Click"></Button>
+    </StackPanel>
+</Window>

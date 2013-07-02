@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstWPF App", "WpfApplication3\MyFirstWPF App.csproj", "{6F246574-3366-4757-89A6-952A210AF4D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cntr2CntrSync", "AnotherApp\Cntr2CntrSync.csproj", "{2D40E43D-A8AC-41AC-B9BC-5E3F6EE14592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontViewer", "FontViewer\FontViewer.csproj", "{C6462D1E-BBC3-4466-A0DC-9FBD422A3A20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COntrol2ObjectBinding", "COntrol2ObjectBinding\COntrol2ObjectBinding.csproj", "{49D92658-50CE-493E-AED8-8B3BDB05E39A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculator", "TaxCalculator\TaxCalculator.csproj", "{0F861DF4-8D93-4780-A58C-DB8E0A58A489}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F246574-3366-4757-89A6-952A210AF4D4}.Debug|x86.ActiveCfg = Debug|x86
+		{6F246574-3366-4757-89A6-952A210AF4D4}.Debug|x86.Build.0 = Debug|x86
+		{6F246574-3366-4757-89A6-952A210AF4D4}.Release|x86.ActiveCfg = Release|x86
+		{6F246574-3366-4757-89A6-952A210AF4D4}.Release|x86.Build.0 = Release|x86
+		{2D40E43D-A8AC-41AC-B9BC-5E3F6EE14592}.Debug|x86.ActiveCfg = Debug|x86
+		{2D40E43D-A8AC-41AC-B9BC-5E3F6EE14592}.Debug|x86.Build.0 = Debug|x86
+		{2D40E43D-A8AC-41AC-B9BC-5E3F6EE14592}.Release|x86.ActiveCfg = Release|x86
+		{2D40E43D-A8AC-41AC-B9BC-5E3F6EE14592}.Release|x86.Build.0 = Release|x86
+		{C6462D1E-BBC3-4466-A0DC-9FBD422A3A20}.Debug|x86.ActiveCfg = Debug|x86
+		{C6462D1E-BBC3-4466-A0DC-9FBD422A3A20}.Debug|x86.Build.0 = Debug|x86
+		{C6462D1E-BBC3-4466-A0DC-9FBD422A3A20}.Release|x86.ActiveCfg = Release|x86
+		{C6462D1E-BBC3-4466-A0DC-9FBD422A3A20}.Release|x86.Build.0 = Release|x86
+		{49D92658-50CE-493E-AED8-8B3BDB05E39A}.Debug|x86.ActiveCfg = Debug|x86
+		{49D92658-50CE-493E-AED8-8B3BDB05E39A}.Debug|x86.Build.0 = Debug|x86
+		{49D92658-50CE-493E-AED8-8B3BDB05E39A}.Release|x86.ActiveCfg = Release|x86
+		{49D92658-50CE-493E-AED8-8B3BDB05E39A}.Release|x86.Build.0 = Release|x86
+		{0F861DF4-8D93-4780-A58C-DB8E0A58A489}.Debug|x86.ActiveCfg = Debug|x86
+		{0F861DF4-8D93-4780-A58C-DB8E0A58A489}.Debug|x86.Build.0 = Debug|x86
+		{0F861DF4-8D93-4780-A58C-DB8E0A58A489}.Release|x86.ActiveCfg = Release|x86
+		{0F861DF4-8D93-4780-A58C-DB8E0A58A489}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

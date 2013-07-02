@@ -1,0 +1,26 @@
+﻿<Window x:Class="AnotherApp.Example2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:AnotherApp"
+        Title="Example2" Height="300" Width="300">
+    <Grid>
+        <Slider Height="23" HorizontalAlignment="Left" 
+                Margin="12,12,0,0" Name="slider1" 
+                VerticalAlignment="Top" Width="254" 
+                Minimum="0" Maximum="100" 
+                SmallChange="1" LargeChange="10" />
+        <TextBlock Height="23" HorizontalAlignment="Left" 
+                   Margin="71,60,0,0" Name="textBlock1" 
+                   VerticalAlignment="Top" Width="114"
+                   Text="{Binding ElementName=slider1, Path=Value, StringFormat=##}">
+            <TextBlock.Foreground>
+                <Binding ElementName="slider1" Path="Value">
+                    <Binding.Converter>
+                        <local:SliderToTextBlockForegroundBrushConverter>
+                        </local:SliderToTextBlockForegroundBrushConverter>
+                    </Binding.Converter>
+                </Binding>
+            </TextBlock.Foreground>
+        </TextBlock>
+    </Grid>
+</Window>
